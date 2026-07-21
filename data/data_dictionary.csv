@@ -1,0 +1,10 @@
+variable_name,label,data_type,unit,frequency,source,role,expected_range,missing_value_rule
+date,Observation date,date,YYYY-MM-DD,monthly,multiple,index,valid date,not allowed
+commodity,Commodity name,string,text,monthly,AGMARKNET,key,controlled vocabulary,not allowed
+modal_price,Modal market price,float,INR per quintal,daily,AGMARKNET,target,nonnegative,flag and investigate
+arrival_quantity,Market arrivals,float,tonnes,daily,AGMARKNET,predictor,nonnegative,documented rule only
+rainfall_mm,Rainfall,float,millimetres,monthly,IMD,predictor,nonnegative,flag extreme values
+cfpi,Consumer Food Price Index,float,index,monthly,MOSPI,validation,positive,short-gap interpolation only
+food_expenditure_share,Food share,float,proportion,survey,HCES,hfasi_weight,0 to 1,documented segment rule
+price_shock,Price-shock indicator,integer,binary,monthly,derived,target,0 or 1,not allowed
+hfasi,Household Food Affordability Stress Index,float,index,monthly,derived,outcome,nonnegative,not allowed

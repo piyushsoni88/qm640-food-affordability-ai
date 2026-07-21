@@ -1,0 +1,8 @@
+sources:
+  agmarknet: {description: Agricultural market prices and arrivals, owner: DMI, frequency: daily}
+  mospi_cfpi: {description: Consumer Food Price Index, owner: MOSPI, frequency: monthly}
+  hces: {description: Household Consumption Expenditure Survey, owner: NSO, frequency: survey_cycle}
+  imd: {description: Rainfall and climate indicators, owner: IMD, frequency: daily_monthly}
+  des: {description: Crop production estimates, owner: DES, frequency: seasonal_annual}
+  nhb: {description: Horticultural production statistics, owner: NHB, frequency: annual}
+  labour_bureau: {description: Wage and consumer-price indicators, owner: Labour Bureau, frequency: monthly}

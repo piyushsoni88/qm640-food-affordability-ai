@@ -1,0 +1,21 @@
+[build-system]
+requires=["setuptools>=69","wheel"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="food-affordability-ai"
+version="0.1.0"
+description="Explainable AI framework for food price shocks and affordability stress in India"
+authors=[{name="Piyush Soni"}]
+requires-python=">=3.11"
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[tool.pytest.ini_options]
+testpaths=["tests"]
+addopts="-q --disable-warnings --maxfail=1"
+
+[tool.ruff]
+line-length=100
+target-version="py311"

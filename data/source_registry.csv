@@ -1,0 +1,8 @@
+source_id,source_name,owner,domain,frequency,geographic_level,planned_use
+SRC001,AGMARKNET,DMI,market_prices,daily,market,price_and_arrival_features
+SRC002,CFPI,MOSPI,consumer_prices,monthly,national_state,inflation_target_validation
+SRC003,HCES,NSO,household_expenditure,survey,rural_urban_segment,affordability_weights
+SRC004,IMD Rainfall,IMD,climate,daily_monthly,district_state,weather_features
+SRC005,Crop Production,DES,agriculture,seasonal_annual,state,production_features
+SRC006,Horticulture,NHB,agriculture,annual,state,horticulture_features
+SRC007,Wage and CPI,Labour Bureau,income_prices,monthly,state,affordability_context

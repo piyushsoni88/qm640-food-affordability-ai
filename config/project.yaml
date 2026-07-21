@@ -1,0 +1,20 @@
+project:
+  name: qm640-food-affordability-ai
+  country: India
+  forecast_horizons_months: [1,2,3]
+  target_frequency: monthly
+  random_seed: 42
+commodities: [rice,wheat,onion,potato,tomato,pulses,edible_oil]
+shock_definition:
+  method: hybrid
+  rolling_window_months: 12
+  z_score_threshold: 2.0
+  month_on_month_threshold_pct: 10.0
+evaluation:
+  regression_metrics: [mae,rmse,smape]
+  classification_metrics: [precision,recall,f1,roc_auc]
+  cross_validation: rolling_origin
+hfasi:
+  rural_food_share: 0.463
+  urban_food_share: 0.391
+  normalization: baseline_100
