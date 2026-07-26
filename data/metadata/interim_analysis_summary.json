@@ -1,0 +1,104 @@
+{
+  "analysis_generated_at": "2026-07-26T19:36:07.834373+00:00",
+  "train_period": [
+    "2006-01-01",
+    "2021-12-01"
+  ],
+  "test_period": [
+    "2022-01-01",
+    "2025-11-01"
+  ],
+  "train_rows": 192,
+  "test_rows": 47,
+  "best_regression_model": "Ridge regression",
+  "regression_results": [
+    {
+      "Model": "Ridge regression",
+      "MAE": 1.3623801334450658,
+      "RMSE": 1.932807707752531,
+      "sMAPE_pct": 0.9103783942335348,
+      "R2": 0.9574446007533147
+    },
+    {
+      "Model": "Persistence",
+      "MAE": 1.4256876382978716,
+      "RMSE": 2.045043382172368,
+      "sMAPE_pct": 0.9522291524125501,
+      "R2": 0.9523588296065965
+    },
+    {
+      "Model": "Random forest",
+      "MAE": 19.75028063789042,
+      "RMSE": 21.948039223337936,
+      "sMAPE_pct": 14.010895601892392,
+      "R2": -4.487427898883885
+    }
+  ],
+  "cross_validation": [
+    {
+      "Model": "Ridge regression",
+      "CV_MAE_mean": 1.6571484659263374,
+      "CV_MAE_std": 0.23643576760646012,
+      "folds": 5
+    },
+    {
+      "Model": "Random forest",
+      "CV_MAE_mean": 9.899911627072498,
+      "CV_MAE_std": 4.4934371838983385,
+      "folds": 5
+    }
+  ],
+  "shock_classification": [
+    {
+      "Model": "Random forest classifier",
+      "test_rows": 47,
+      "positive_events": 3,
+      "Accuracy": 0.851063829787234,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC_AUC": 0.8181818181818181
+    }
+  ],
+  "paired_wilcoxon_best_vs_persistence": {
+    "statistic": 644.0,
+    "p_value_one_sided": 0.20182707314396708
+  },
+  "ols_adjusted_r_squared": 0.3414610440983624,
+  "ols_n": 250,
+  "top_features": [
+    {
+      "feature": "food_cpi_2015_100",
+      "importance": 0.2933571066019487
+    },
+    {
+      "feature": "food_cpi_lag_1",
+      "importance": 0.264200041289849
+    },
+    {
+      "feature": "food_cpi_lag_12",
+      "importance": 0.22062977790365973
+    },
+    {
+      "feature": "food_cpi_lag_3",
+      "importance": 0.21655118837195841
+    },
+    {
+      "feature": "world_rice_usd_per_mt",
+      "importance": 0.0019283833964639722
+    },
+    {
+      "feature": "world_soybean_oil_usd_per_mt",
+      "importance": 0.0009380970789890168
+    },
+    {
+      "feature": "world_palm_oil_usd_per_mt",
+      "importance": 0.0006846086441968114
+    },
+    {
+      "feature": "world_wheat_usd_per_mt",
+      "importance": 0.0006398663100824056
+    }
+  ],
+  "interpretation_warning": "These are interim predictive associations using national price proxies. They do not establish causality or replace the planned AGMARKNET panel."
+}

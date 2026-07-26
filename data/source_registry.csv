@@ -6,3 +6,9 @@ SRC004,IMD Rainfall,IMD,climate,daily_monthly,district_state,weather_features
 SRC005,Crop Production,DES,agriculture,seasonal_annual,state,production_features
 SRC006,Horticulture,NHB,agriculture,annual,state,horticulture_features
 SRC007,Wage and CPI,Labour Bureau,income_prices,monthly,state,affordability_context
+SRC008,FAOSTAT Consumer Price Indices,FAO,consumer_prices,monthly,national,interim_food_cpi_target
+SRC009,FAOSTAT Producer Prices,FAO,producer_prices,annual,national,commodity_price_proxy
+SRC010,FAOSTAT Crop and Livestock Production,FAO,agriculture,annual,national,production_features
+SRC011,NASA POWER,NASA,climate,monthly,regional_point,interim_weather_features
+SRC012,World Bank Pink Sheet,World Bank,international_prices,monthly,global,external_price_features
+SRC013,Agricultural Prices in India 2024,DES,agricultural_prices,annual,national,official_validation_publication

@@ -1,0 +1,31 @@
+# Curated interim datasets
+
+These compressed CSV files are the evaluator-accessible analytical layer. They
+are ordinary gzip-compressed CSVs and can be read directly with pandas:
+
+```python
+import pandas as pd
+
+panel = pd.read_csv(
+    "data/curated/india_food_affordability_panel_15x8_2005_2025.csv.gz"
+)
+```
+
+| File | Rows | Description |
+|---|---:|---|
+| `faostat_india_consumer_price_indices.csv.gz` | 924 | All India rows extracted from the FAOSTAT CPI bulk archive |
+| `faostat_india_producer_prices.csv.gz` | 5,665 | All India rows extracted from the FAOSTAT producer-price archive |
+| `faostat_india_crop_production.csv.gz` | 26,432 | All India rows extracted from the FAOSTAT crop/livestock archive |
+| `nasa_power_india_15_regions_monthly_2005_2025.csv.gz` | 3,780 | Five monthly climate variables for 15 selected Indian regional points |
+| `world_bank_pink_sheet_food_energy_monthly.csv.gz` | 792 | Selected monthly international food and energy benchmarks |
+| `india_commodity_annual_production_prices.csv.gz` | 512 | Commodity-mapped annual India production and producer-price features |
+| `india_food_affordability_national_monthly.csv.gz` | 252 | National monthly modeling table with lags and exogenous predictors |
+| `india_food_affordability_panel_15x8_2005_2025.csv.gz` | 30,240 | Date-region-commodity integration panel |
+
+The 30,240-row panel combines observed region-specific NASA climate with
+national FAOSTAT and World Bank series. National variables are explicitly
+proxies and must not be described as regional mandi prices. The planned
+AGMARKNET backfill requires a user-authorized data.gov.in API key.
+
+Provenance, checksums, sizes, access times, and quality results are in
+`data/metadata/`.

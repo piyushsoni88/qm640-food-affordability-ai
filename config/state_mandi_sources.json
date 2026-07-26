@@ -1,0 +1,32 @@
+[
+  {
+    "state": "Maharashtra",
+    "name": "source_page",
+    "url": "https://www.msamb.com/",
+    "enabled": true
+  },
+  {
+    "state": "Karnataka",
+    "name": "source_page",
+    "url": "https://krishimaratavahini.kar.nic.in/",
+    "enabled": true
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "source_page",
+    "url": "https://www.mpmandiboard.gov.in/",
+    "enabled": true
+  },
+  {
+    "state": "Gujarat",
+    "name": "source_page",
+    "url": "https://agri.gujarat.gov.in/",
+    "enabled": true
+  },
+  {
+    "state": "Rajasthan",
+    "name": "source_page",
+    "url": "https://agriculture.rajasthan.gov.in/",
+    "enabled": true
+  }
+]

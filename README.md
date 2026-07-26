@@ -29,3 +29,57 @@ pip install -e .
 pytest
 python scripts/run_phase1.py
 ```
+
+## Interim assignment release
+
+The interim release contains a reproducible, India-focused research dataset and
+time-aware preliminary analysis:
+
+- 51.5 MB of authoritative raw source files retained locally;
+- 37,593 source-specific India, climate, and benchmark records in the curated layer;
+- a 30,240-row `date x region x commodity` integration panel;
+- 15 regional NASA POWER series, eight commodity groups, and 2005-2025 coverage;
+- source URLs, access timestamps, sizes, SHA-256 checksums, and row counts;
+- rolling-origin validation, a fixed 2022-2025 holdout, statistical inference,
+  and report-ready figures/tables.
+
+Install the collector and modeling dependencies, then run:
+
+```powershell
+python -m pip install -r requirements_collectors.txt
+python -m pip install -r requirements.txt
+python scripts/09_build_interim_research_dataset.py --start-year 2005 --end-year 2025
+python scripts/10_run_interim_analysis.py
+pytest
+```
+
+The final DOCX report is under
+`reports/Piyush_Soni_QM640_Interim_Report.docx`.
+
+## Data sources and storage policy
+
+| Source | Interim use | Access |
+|---|---|---|
+| FAOSTAT | India food CPI, producer prices, production | Public bulk downloads |
+| NASA POWER | Monthly climate at 15 Indian regional points | Public API |
+| World Bank Pink Sheet | Monthly global food and energy benchmarks | Public workbook |
+| DES, Government of India | Agricultural price publication/validation | Public PDF |
+| AGMARKNET / data.gov.in | Planned mandi prices and arrivals | Personal API key required |
+
+Evaluator-ready India extracts and the 30,240-row derived panel are committed
+under `data/curated/`. Large immutable archives and NASA response payloads are
+downloaded into `data/raw/`, verified by checksums, and excluded from Git
+history. This avoids GitHub's large-file limits while preserving full
+reproducibility. Put `DATA_GOV_IN_API_KEY` in an untracked `.env` file before
+running the AGMARKNET collector; never commit the credential.
+
+## Preliminary findings
+
+On the 47-month 2022-2025 holdout, ridge regression achieved MAE 1.362, RMSE
+1.933, sMAPE 0.910%, and R-squared 0.957. Persistence remained a strong control
+(RMSE 2.045), and the paired improvement was not statistically significant
+(one-sided Wilcoxon p = 0.202). A level-based random forest failed to
+extrapolate (RMSE 21.948), motivating differenced targets and trend-capable
+models. The rare-event classifier ranked cases reasonably (ROC-AUC 0.818) but
+detected none of the three holdout shocks at the default threshold; threshold
+tuning and precision-recall evaluation remain final-report work.

@@ -1,1 +1,2 @@
-manifest_id,source_id,file_name,download_date,coverage_start,coverage_end,checksum,license_or_terms,notes
+source,url,local_path,downloaded_at_utc,size_bytes,sha256,status,notes
+des_agricultural_prices,https://desagri.gov.in/wp-content/uploads/2021/05/Index-2012-13.pdf,data/raw/des/agricultural_prices/year=2021/Index-2012-13.pdf,2026-07-26T19:24:01.680178+00:00,70315,91ee14e8538d27a5ebe07d9b1cb9dda4707ee815622dbe744b5648f7db840cae,success,Agricultural Prices in India - Index

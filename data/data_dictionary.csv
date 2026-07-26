@@ -8,3 +8,15 @@ cfpi,Consumer Food Price Index,float,index,monthly,MOSPI,validation,positive,sho
 food_expenditure_share,Food share,float,proportion,survey,HCES,hfasi_weight,0 to 1,documented segment rule
 price_shock,Price-shock indicator,integer,binary,monthly,derived,target,0 or 1,not allowed
 hfasi,Household Food Affordability Stress Index,float,index,monthly,derived,outcome,nonnegative,not allowed
+region,Selected state or representative regional point,string,text,monthly,NASA POWER,key,15-value controlled vocabulary,not allowed
+food_cpi_2015_100,India food consumer price index,float,index 2015=100,monthly,FAOSTAT,target,positive,not imputed
+food_cpi_mom_pct,Month-over-month food CPI change,float,percent,monthly,derived,target,plausibility reviewed,first observation undefined
+food_cpi_yoy_pct,Year-over-year food CPI change,float,percent,monthly,derived,outcome,plausibility reviewed,first 12 observations undefined
+world_rice_usd_per_mt,Thai 5 percent rice benchmark,float,USD per metric tonne,monthly,World Bank,predictor,positive,documented short-gap interpolation only
+world_wheat_usd_per_mt,US SRW wheat benchmark,float,USD per metric tonne,monthly,World Bank,predictor,positive,documented short-gap interpolation only
+world_palm_oil_usd_per_mt,Palm oil benchmark,float,USD per metric tonne,monthly,World Bank,predictor,positive,documented short-gap interpolation only
+world_soybean_oil_usd_per_mt,Soybean oil benchmark,float,USD per metric tonne,monthly,World Bank,predictor,positive,documented short-gap interpolation only
+temperature_c,Two-metre monthly temperature,float,degrees Celsius,monthly,NASA POWER,predictor,physical range,-999 converted to missing
+relative_humidity_pct,Two-metre relative humidity,float,percent,monthly,NASA POWER,predictor,0 to 100,-999 converted to missing
+producer_price_lcu_per_tonne,Matched annual India producer price,float,INR per tonne,annual,FAOSTAT,panel_proxy,nonnegative,retain missing and flag
+production_tonnes,Matched annual India production,float,tonnes,annual,FAOSTAT,predictor,nonnegative,retain missing and flag
