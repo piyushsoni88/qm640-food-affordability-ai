@@ -21,11 +21,19 @@ panel = pd.read_csv(
 | `india_commodity_annual_production_prices.csv.gz` | 512 | Commodity-mapped annual India production and producer-price features |
 | `india_food_affordability_national_monthly.csv.gz` | 252 | National monthly modeling table with lags and exogenous predictors |
 | `india_food_affordability_panel_15x8_2005_2025.csv.gz` | 30,240 | Date-region-commodity integration panel |
+| `nasa_power_india_all_states_uts_daily_2000_2026_ytd.csv.gz` | 349,272 | Daily climate observations for 28 states and eight union territories through 24 July 2026 |
+| `nasa_power_india_all_states_uts_monthly_2000_2026_ytd.csv.gz` | 11,484 | Monthly climate aggregates with partial-period flags |
+| `india_food_affordability_national_monthly_2000_2026_ytd.csv.gz` | 319 | Expanded national monthly feature table |
+| `india_food_affordability_panel_36x8_2000_2026_ytd.csv.gz` | 91,872 | All-state/UT, eight-commodity integration panel |
 
 The 30,240-row panel combines observed region-specific NASA climate with
 national FAOSTAT and World Bank series. National variables are explicitly
 proxies and must not be described as regional mandi prices. The planned
 AGMARKNET backfill requires a user-authorized data.gov.in API key.
+
+The expanded climate files use one reproducible administrative-capital point
+per state/UT. They provide a consistent regional indicator but are not
+area-weighted state averages. July 2026 is partial and is explicitly flagged.
 
 Provenance, checksums, sizes, access times, and quality results are in
 `data/metadata/`.

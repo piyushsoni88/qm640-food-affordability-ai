@@ -56,6 +56,24 @@ pytest
 The final DOCX report is under
 `reports/Piyush_Soni_QM640_Interim_Report.docx`.
 
+## All-India 2000-2026 expansion
+
+The extended collector covers all 28 states and eight union territories using
+one documented administrative-capital point per region. It downloads NASA
+POWER daily climate observations from 2000 through the latest safely available
+2026 date, retains the raw API payloads locally, creates monthly aggregates,
+and builds an eight-commodity integration panel:
+
+```powershell
+python scripts/12_collect_all_india_state_daily_climate.py
+```
+
+The 2026 records are explicitly flagged as year-to-date/provisional. Regional
+climate fields are observed at representative points; FAOSTAT and World Bank
+price/production fields remain India-level proxies and must not be interpreted
+as state mandi prices. Full MoSPI state CPI requires a registered API token,
+and historical AGMARKNET data requires a personal data.gov.in API key.
+
 ## Data sources and storage policy
 
 | Source | Interim use | Access |

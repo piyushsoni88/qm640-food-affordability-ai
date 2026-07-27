@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-07-27T18:45:58.373302+00:00",
+  "requested_end_date": "2026-07-24",
+  "actual_date_min": "2000-01-01",
+  "actual_date_max": "2026-07-24",
+  "states": 28,
+  "union_territories": 8,
+  "daily_rows": 349272,
+  "monthly_rows": 11484,
+  "panel_rows": 91872,
+  "commodities": 8,
+  "daily_duplicate_keys": 0,
+  "monthly_duplicate_keys": 0,
+  "panel_duplicate_keys": 0,
+  "partial_month_rows": 36,
+  "raw_files": 108,
+  "raw_bytes": 32611352,
+  "curated_outputs": {
+    "nasa_power_india_all_states_uts_daily_2000_2026_ytd.csv.gz": {
+      "bytes": 5222965,
+      "sha256": "a859d5cbe87248a168f91f444ab8e0b8eb19854619eb20784c4c9c1360b63a36"
+    },
+    "nasa_power_india_all_states_uts_monthly_2000_2026_ytd.csv.gz": {
+      "bytes": 313945,
+      "sha256": "05e2ea45f2182c44a443088c83e9f81b7c58da99d4b66f843f4a6119c25be147"
+    },
+    "india_food_affordability_national_monthly_2000_2026_ytd.csv.gz": {
+      "bytes": 32272,
+      "sha256": "c47d1d718100f06e99aa47a06a32e183da2b60d5434308af7e1e494743c44608"
+    },
+    "india_food_affordability_panel_36x8_2000_2026_ytd.csv.gz": {
+      "bytes": 2111706,
+      "sha256": "e9890b6f8e76177f2822ac9fc59e145e7702ccbb7abacbfa2aec8f98d2d3594a"
+    }
+  },
+  "method_note": "NASA POWER daily observations are tied to one reproducible administrative-capital point per state/UT. They are not area-weighted state averages. 2026 is year-to-date and provisional.",
+  "national_proxy_note": "FAOSTAT and World Bank price/production fields in the integration panel are India-level covariates repeated across regions, not state mandi observations."
+}
