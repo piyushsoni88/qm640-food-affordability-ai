@@ -1,2 +1,3 @@
 source,url,local_path,downloaded_at_utc,size_bytes,sha256,status,notes
 des_agricultural_prices,https://desagri.gov.in/wp-content/uploads/2021/05/Index-2012-13.pdf,data/raw/des/agricultural_prices/year=2021/Index-2012-13.pdf,2026-07-26T19:24:01.680178+00:00,70315,91ee14e8538d27a5ebe07d9b1cb9dda4707ee815622dbe744b5648f7db840cae,success,Agricultural Prices in India - Index
+agmarknet_current,https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070,data\raw\agmarknet\current\year=2026\month=07\agmarknet_current_20260728_190515.csv,2026-07-28T13:35:15.365101+00:00,364474,949afbe49a53be14413637abe0e8b6a4f76347156944ef1c69834b150327c214,success,resource=9ef84268-d588-465a-a308-a864a43d0070
