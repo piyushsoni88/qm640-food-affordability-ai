@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-07-28T14:37:58.789703+00:00",
+  "resource_id": "35985678-0d79-46b4-9ed6-6f13308a1d24",
+  "resource_url": "https://www.data.gov.in/backend/dataapi/v1/resource/35985678-0d79-46b4-9ed6-6f13308a1d24",
+  "snapshot_totals_verified_on": "2026-07-28",
+  "target_source_rows": 18836462,
+  "download": {
+    "pages": 192,
+    "rows": 18836462,
+    "reused_pages": 0,
+    "elapsed_seconds": 722.8,
+    "mode": "completed official API snapshot"
+  },
+  "aggregation": {
+    "raw_files": 192,
+    "raw_rows": 18836462,
+    "aggregated_rows": 969377,
+    "date_min": "2001-01-10",
+    "date_max": "2026-07-28",
+    "states_and_labels": 34,
+    "commodities": 8,
+    "duplicate_keys": 0
+  },
+  "raw_compressed_bytes": 166538781,
+  "curated_bytes": 12268568,
+  "curated_sha256": "dade6c147733ec4d9baa6303712f9a02e9e958af0b0d726194e1a4f8be0cee00",
+  "method_note": "Raw variety/market observations are retained locally in resumable gzip pages. The GitHub-ready table aggregates observations to date-state-commodity and preserves source-row counts. Market and district partition-count sums are diagnostic upper bounds because the same reporting unit can occur across pagination boundaries."
+}

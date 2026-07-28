@@ -74,6 +74,20 @@ price/production fields remain India-level proxies and must not be interpreted
 as state mandi prices. Full MoSPI state CPI requires a registered API token,
 and historical AGMARKNET data requires a personal data.gov.in API key.
 
+## Historical AGMARKNET backfill
+
+With an authorized data.gov.in key configured in `.env`, the resumable
+historical collector downloads 18,836,462 market observations for rice, wheat,
+onion, potato, tomato, gram, arhar/tur, and soyabean:
+
+```powershell
+python scripts/13_collect_agmarknet_historical.py
+```
+
+Raw 100,000-row gzip partitions remain under `data/raw/`. The collector creates
+a 969,377-row daily state-commodity analytical table in `data/curated/` for
+version control and evaluator access.
+
 ## Data sources and storage policy
 
 | Source | Interim use | Access |
