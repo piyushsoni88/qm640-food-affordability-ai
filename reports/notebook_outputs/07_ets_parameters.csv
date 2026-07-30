@@ -1,0 +1,9 @@
+parameter,value
+smoothing_level,0.9999999850988388
+smoothing_trend,0.029425821554259678
+smoothing_seasonal,1.4888704404719041e-08
+damping_trend,0.995
+initial_level,38.36831650674298
+initial_trend,0.1491152413375932
+use_boxcox,False
+remove_bias,True

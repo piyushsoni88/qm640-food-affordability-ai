@@ -1,0 +1,7 @@
+area,limitation,impact,mitigation
+Household representation,HFASI uses published aggregate rural/urban food shares because HCES microdata were not supplied.,No household-level or expenditure-quantile inference,Label representative segments and report sensitivity grid
+Rare shocks,Only five shocks occurred in the 60-month evaluation window.,Classifier recall and precision have high sampling uncertainty,"Report confusion matrix, PR metrics, and avoid policy automation"
+Scenario non-monotonicity,The favorable scenario has slightly higher modeled risk than baseline due to nonlinear interactions.,Scenario probabilities are model-sensitive,"Report assumptions, HFASI, and classifier outputs together"
+Causal interpretation,Regression and explainability outputs are associational.,No driver is established as a causal intervention target,Use causal language prohibitions throughout the report
+Long-horizon uncertainty,Only 24 historical origins calibrate 24-step intervals.,Tail uncertainty is approximate,Report horizon-specific intervals and conditional assumptions
+Market coverage,AGMARKNET reporting is an unbalanced state-market panel.,Coverage changes can resemble price changes,Retain coverage measures and avoid interpolating missing prices

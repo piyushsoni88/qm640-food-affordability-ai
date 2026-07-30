@@ -1,0 +1,18 @@
+{
+  "notebook": "10_final_results",
+  "status": "completed",
+  "upstream_notebooks_verified": 9,
+  "research_questions_mapped": 4,
+  "key_findings_consolidated": 11,
+  "limitations_registered": 6,
+  "artifacts_in_inventory": 98,
+  "one_step_model": "naive_last",
+  "long_horizon_model": "damped_ets",
+  "shock_classifier": "hist_gradient_boosting",
+  "baseline_2026_max_shock_probability": 0.04123813257200249,
+  "mean_2026_food_cost_growth_pct": 2.5822516766515604,
+  "severe_scenario_max_shock_probability": 0.7488135892505073,
+  "severe_scenario_max_hfasi": 102.54389322668777,
+  "report_readiness": "Analysis artifacts consolidated; final narrative must retain documented assumptions and limitations.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

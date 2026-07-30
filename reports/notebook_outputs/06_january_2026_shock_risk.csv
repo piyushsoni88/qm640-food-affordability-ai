@@ -1,0 +1,2 @@
+feature_month,target_date,horizon_months,input_status,shock_threshold_yoy_pct,persistence_probability,logistic_balanced_probability,random_forest_balanced_probability,hist_gradient_boosting_probability,selected_model,selected_model_probability,scenario_assumption
+2025-12-01,2026-01-01,1,observed inputs,8.591251763628128,0.0,4.7360430701180945e-05,0.07969905682523731,0.02586590744287365,hist_gradient_boosting,0.02586590744287365,Notebook 05 CPI path; external price levels held at Dec-2025; future climate anomalies set to seasonal normal

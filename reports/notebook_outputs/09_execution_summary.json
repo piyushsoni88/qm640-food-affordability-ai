@@ -1,0 +1,21 @@
+{
+  "notebook": "09_scenario_analysis",
+  "status": "completed",
+  "scenarios": [
+    "Baseline",
+    "Favorable supply",
+    "Moderate stress",
+    "Severe stress"
+  ],
+  "scenario_months": 12,
+  "baseline_reproduces_notebook_06": true,
+  "baseline_reproduces_notebook_08": true,
+  "purchasing_power_growth_held_pct": 4.0,
+  "highest_hfasi_scenario": "Severe stress",
+  "highest_hfasi_segment": "Rural",
+  "highest_monthly_hfasi": 102.54389322668777,
+  "highest_shock_probability_scenario": "Severe stress",
+  "highest_scenario_shock_probability": 0.7488135892505073,
+  "interpretation": "Controlled what-if stress test; scenario assumptions are not forecasts or causal effect estimates.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

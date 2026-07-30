@@ -1,0 +1,24 @@
+{
+  "notebook": "08_affordability_index",
+  "status": "completed",
+  "index_name": "Household Food Affordability Stress Index (HFASI)",
+  "formula": "100 + food_expenditure_share * (food_cost_growth_pct - purchasing_power_growth_pct)",
+  "segments": {
+    "Rural": 0.463,
+    "Urban": 0.391
+  },
+  "segment_weight_source": "Published HCES 2022-23 aggregate food-expenditure shares; microdata not used.",
+  "purchasing_power_scenarios_pct": {
+    "Downside (0%)": 0.0,
+    "Baseline (4%)": 4.0,
+    "Upside (8%)": 8.0
+  },
+  "forecast_months": 12,
+  "mean_2026_food_cost_growth_pct": 2.5822516766515604,
+  "baseline_highest_hfasi_segment": "Urban",
+  "baseline_highest_hfasi_month": "2026-05-01",
+  "baseline_highest_hfasi": 99.80229859964346,
+  "highest_2026_shock_probability": 0.0412381325720024,
+  "interpretation": "Scenario-based representative-segment stress; not a household-level estimate, causal effect, or welfare threshold.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

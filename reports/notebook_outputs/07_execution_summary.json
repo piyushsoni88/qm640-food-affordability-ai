@@ -1,0 +1,22 @@
+{
+  "notebook": "07_explainability",
+  "status": "completed",
+  "one_step_winner_explanation": "Naive last-month CPI; no fitted feature coefficients.",
+  "explained_complex_forecast_model": "ridge_arx",
+  "top_ridge_permutation_feature": "cpi_lag_12",
+  "top_ridge_rmse_importance": 1.0100581219105438,
+  "long_horizon_model": "damped_ets",
+  "long_horizon_explanation": "Damped trend plus estimated 12-month additive seasonality.",
+  "shock_model": "hist_gradient_boosting",
+  "top_shock_permutation_feature": "food_cpi_yoy_current",
+  "top_shock_roc_auc_decrease": 0.2801454545454545,
+  "annual_explanation_months": 12,
+  "january_2026_probability": 0.0258659074428736,
+  "highest_2026_risk_month": "2026-08-01",
+  "highest_2026_risk_probability": 0.0412381325720024,
+  "largest_annual_local_feature": "target_month_cos",
+  "largest_annual_local_feature_month": "2026-08-01",
+  "annual_explanation_scope": "January uses observed December 2025 inputs; February\u2013December explain conditional scenario inputs from Notebook 06.",
+  "interpretation": "Predictive explanations and sensitivity; not causal attribution.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

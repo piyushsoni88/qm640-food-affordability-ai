@@ -1,0 +1,73 @@
+date,segment,food_expenditure_share,purchasing_power_scenario,purchasing_power_growth_pct,food_cost_growth_yoy_pct,hfasi,shock_probability,input_status,affordability_state
+2026-01-01,Rural,0.463,Downside (0%),0.0,0.359967571139741,100.1666649854377,0.0258659074428736,observed inputs,Mild stress
+2026-02-01,Rural,0.463,Downside (0%),0.0,1.791373589698253,100.82940597203029,0.0112516802490845,conditional forecast inputs,Mild stress
+2026-03-01,Rural,0.463,Downside (0%),0.0,2.5830403789680156,101.1959476954622,0.0120236223002651,conditional forecast inputs,Mild stress
+2026-04-01,Rural,0.463,Downside (0%),0.0,3.155344247268954,101.46092438648553,0.0120236223002651,conditional forecast inputs,Mild stress
+2026-05-01,Rural,0.463,Downside (0%),0.0,3.494369820059995,101.61789322668778,0.0079703340047151,conditional forecast inputs,Mild stress
+2026-06-01,Rural,0.463,Downside (0%),0.0,3.19385787676143,101.47875619694054,0.0085402930528552,conditional forecast inputs,Mild stress
+2026-07-01,Rural,0.463,Downside (0%),0.0,2.4419911993915244,101.13064192531827,0.0379960912684658,conditional forecast inputs,Mild stress
+2026-08-01,Rural,0.463,Downside (0%),0.0,2.1282807834275053,100.98539400272693,0.0412381325720024,conditional forecast inputs,Mild stress
+2026-09-01,Rural,0.463,Downside (0%),0.0,2.625221366151753,101.21547749252827,0.0142689722236095,conditional forecast inputs,Mild stress
+2026-10-01,Rural,0.463,Downside (0%),0.0,3.3233792593209355,101.5387245970656,0.0165604470671908,conditional forecast inputs,Mild stress
+2026-11-01,Rural,0.463,Downside (0%),0.0,3.040821868747523,101.4079005252301,0.0180849369556883,conditional forecast inputs,Mild stress
+2026-12-01,Rural,0.463,Downside (0%),0.0,2.849372158883101,101.31925930956288,0.0177669002648419,conditional forecast inputs,Mild stress
+2026-01-01,Rural,0.463,Baseline (4%),4.0,0.359967571139741,98.3146649854377,0.0258659074428736,observed inputs,Stable or improving
+2026-02-01,Rural,0.463,Baseline (4%),4.0,1.791373589698253,98.9774059720303,0.0112516802490845,conditional forecast inputs,Stable or improving
+2026-03-01,Rural,0.463,Baseline (4%),4.0,2.5830403789680156,99.34394769546219,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-04-01,Rural,0.463,Baseline (4%),4.0,3.155344247268954,99.60892438648553,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-05-01,Rural,0.463,Baseline (4%),4.0,3.494369820059995,99.76589322668778,0.0079703340047151,conditional forecast inputs,Stable or improving
+2026-06-01,Rural,0.463,Baseline (4%),4.0,3.19385787676143,99.62675619694055,0.0085402930528552,conditional forecast inputs,Stable or improving
+2026-07-01,Rural,0.463,Baseline (4%),4.0,2.4419911993915244,99.27864192531828,0.0379960912684658,conditional forecast inputs,Stable or improving
+2026-08-01,Rural,0.463,Baseline (4%),4.0,2.1282807834275053,99.13339400272693,0.0412381325720024,conditional forecast inputs,Stable or improving
+2026-09-01,Rural,0.463,Baseline (4%),4.0,2.625221366151753,99.36347749252826,0.0142689722236095,conditional forecast inputs,Stable or improving
+2026-10-01,Rural,0.463,Baseline (4%),4.0,3.3233792593209355,99.68672459706559,0.0165604470671908,conditional forecast inputs,Stable or improving
+2026-11-01,Rural,0.463,Baseline (4%),4.0,3.040821868747523,99.5559005252301,0.0180849369556883,conditional forecast inputs,Stable or improving
+2026-12-01,Rural,0.463,Baseline (4%),4.0,2.849372158883101,99.46725930956288,0.0177669002648419,conditional forecast inputs,Stable or improving
+2026-01-01,Rural,0.463,Upside (8%),8.0,0.359967571139741,96.4626649854377,0.0258659074428736,observed inputs,Stable or improving
+2026-02-01,Rural,0.463,Upside (8%),8.0,1.791373589698253,97.1254059720303,0.0112516802490845,conditional forecast inputs,Stable or improving
+2026-03-01,Rural,0.463,Upside (8%),8.0,2.5830403789680156,97.49194769546219,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-04-01,Rural,0.463,Upside (8%),8.0,3.155344247268954,97.75692438648552,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-05-01,Rural,0.463,Upside (8%),8.0,3.494369820059995,97.91389322668778,0.0079703340047151,conditional forecast inputs,Stable or improving
+2026-06-01,Rural,0.463,Upside (8%),8.0,3.19385787676143,97.77475619694054,0.0085402930528552,conditional forecast inputs,Stable or improving
+2026-07-01,Rural,0.463,Upside (8%),8.0,2.4419911993915244,97.42664192531828,0.0379960912684658,conditional forecast inputs,Stable or improving
+2026-08-01,Rural,0.463,Upside (8%),8.0,2.1282807834275053,97.28139400272694,0.0412381325720024,conditional forecast inputs,Stable or improving
+2026-09-01,Rural,0.463,Upside (8%),8.0,2.625221366151753,97.51147749252826,0.0142689722236095,conditional forecast inputs,Stable or improving
+2026-10-01,Rural,0.463,Upside (8%),8.0,3.3233792593209355,97.83472459706559,0.0165604470671908,conditional forecast inputs,Stable or improving
+2026-11-01,Rural,0.463,Upside (8%),8.0,3.040821868747523,97.7039005252301,0.0180849369556883,conditional forecast inputs,Stable or improving
+2026-12-01,Rural,0.463,Upside (8%),8.0,2.849372158883101,97.61525930956287,0.0177669002648419,conditional forecast inputs,Stable or improving
+2026-01-01,Urban,0.391,Downside (0%),0.0,0.359967571139741,100.14074732031564,0.0258659074428736,observed inputs,Mild stress
+2026-02-01,Urban,0.391,Downside (0%),0.0,1.791373589698253,100.70042707357202,0.0112516802490845,conditional forecast inputs,Mild stress
+2026-03-01,Urban,0.391,Downside (0%),0.0,2.5830403789680156,101.0099687881765,0.0120236223002651,conditional forecast inputs,Mild stress
+2026-04-01,Urban,0.391,Downside (0%),0.0,3.155344247268954,101.23373960068216,0.0120236223002651,conditional forecast inputs,Mild stress
+2026-05-01,Urban,0.391,Downside (0%),0.0,3.494369820059995,101.36629859964346,0.0079703340047151,conditional forecast inputs,Mild stress
+2026-06-01,Urban,0.391,Downside (0%),0.0,3.19385787676143,101.24879842981372,0.0085402930528552,conditional forecast inputs,Mild stress
+2026-07-01,Urban,0.391,Downside (0%),0.0,2.4419911993915244,100.95481855896209,0.0379960912684658,conditional forecast inputs,Mild stress
+2026-08-01,Urban,0.391,Downside (0%),0.0,2.1282807834275053,100.83215778632015,0.0412381325720024,conditional forecast inputs,Mild stress
+2026-09-01,Urban,0.391,Downside (0%),0.0,2.625221366151753,101.02646155416534,0.0142689722236095,conditional forecast inputs,Mild stress
+2026-10-01,Urban,0.391,Downside (0%),0.0,3.3233792593209355,101.29944129039448,0.0165604470671908,conditional forecast inputs,Mild stress
+2026-11-01,Urban,0.391,Downside (0%),0.0,3.040821868747523,101.18896135068029,0.0180849369556883,conditional forecast inputs,Mild stress
+2026-12-01,Urban,0.391,Downside (0%),0.0,2.849372158883101,101.1141045141233,0.0177669002648419,conditional forecast inputs,Mild stress
+2026-01-01,Urban,0.391,Baseline (4%),4.0,0.359967571139741,98.57674732031563,0.0258659074428736,observed inputs,Stable or improving
+2026-02-01,Urban,0.391,Baseline (4%),4.0,1.791373589698253,99.13642707357202,0.0112516802490845,conditional forecast inputs,Stable or improving
+2026-03-01,Urban,0.391,Baseline (4%),4.0,2.5830403789680156,99.4459687881765,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-04-01,Urban,0.391,Baseline (4%),4.0,3.155344247268954,99.66973960068216,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-05-01,Urban,0.391,Baseline (4%),4.0,3.494369820059995,99.80229859964346,0.0079703340047151,conditional forecast inputs,Stable or improving
+2026-06-01,Urban,0.391,Baseline (4%),4.0,3.19385787676143,99.68479842981372,0.0085402930528552,conditional forecast inputs,Stable or improving
+2026-07-01,Urban,0.391,Baseline (4%),4.0,2.4419911993915244,99.39081855896208,0.0379960912684658,conditional forecast inputs,Stable or improving
+2026-08-01,Urban,0.391,Baseline (4%),4.0,2.1282807834275053,99.26815778632016,0.0412381325720024,conditional forecast inputs,Stable or improving
+2026-09-01,Urban,0.391,Baseline (4%),4.0,2.625221366151753,99.46246155416533,0.0142689722236095,conditional forecast inputs,Stable or improving
+2026-10-01,Urban,0.391,Baseline (4%),4.0,3.3233792593209355,99.73544129039449,0.0165604470671908,conditional forecast inputs,Stable or improving
+2026-11-01,Urban,0.391,Baseline (4%),4.0,3.040821868747523,99.62496135068028,0.0180849369556883,conditional forecast inputs,Stable or improving
+2026-12-01,Urban,0.391,Baseline (4%),4.0,2.849372158883101,99.55010451412329,0.0177669002648419,conditional forecast inputs,Stable or improving
+2026-01-01,Urban,0.391,Upside (8%),8.0,0.359967571139741,97.01274732031564,0.0258659074428736,observed inputs,Stable or improving
+2026-02-01,Urban,0.391,Upside (8%),8.0,1.791373589698253,97.57242707357202,0.0112516802490845,conditional forecast inputs,Stable or improving
+2026-03-01,Urban,0.391,Upside (8%),8.0,2.5830403789680156,97.8819687881765,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-04-01,Urban,0.391,Upside (8%),8.0,3.155344247268954,98.10573960068216,0.0120236223002651,conditional forecast inputs,Stable or improving
+2026-05-01,Urban,0.391,Upside (8%),8.0,3.494369820059995,98.23829859964346,0.0079703340047151,conditional forecast inputs,Stable or improving
+2026-06-01,Urban,0.391,Upside (8%),8.0,3.19385787676143,98.12079842981372,0.0085402930528552,conditional forecast inputs,Stable or improving
+2026-07-01,Urban,0.391,Upside (8%),8.0,2.4419911993915244,97.82681855896209,0.0379960912684658,conditional forecast inputs,Stable or improving
+2026-08-01,Urban,0.391,Upside (8%),8.0,2.1282807834275053,97.70415778632015,0.0412381325720024,conditional forecast inputs,Stable or improving
+2026-09-01,Urban,0.391,Upside (8%),8.0,2.625221366151753,97.89846155416534,0.0142689722236095,conditional forecast inputs,Stable or improving
+2026-10-01,Urban,0.391,Upside (8%),8.0,3.3233792593209355,98.17144129039448,0.0165604470671908,conditional forecast inputs,Stable or improving
+2026-11-01,Urban,0.391,Upside (8%),8.0,3.040821868747523,98.06096135068029,0.0180849369556883,conditional forecast inputs,Stable or improving
+2026-12-01,Urban,0.391,Upside (8%),8.0,2.849372158883101,97.9861045141233,0.0177669002648419,conditional forecast inputs,Stable or improving

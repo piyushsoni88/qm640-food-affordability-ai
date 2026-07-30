@@ -1,0 +1,53 @@
+{
+  "notebook": "04_statistical_analysis",
+  "status": "completed",
+  "national_model_n": 287,
+  "national_baseline_r_squared": 0.873171365310812,
+  "national_full_r_squared": 0.8736108823994133,
+  "national_full_adjusted_r_squared": 0.8695043767734014,
+  "national_full_residual_rmse": 1.242917569437274,
+  "national_hac_maxlags": 12,
+  "significant_national_transmission_terms_5pct": [],
+  "state_window_models": {
+    "2-year": {
+      "n": 3028,
+      "regions": 28,
+      "commodities": 8,
+      "r_squared": 0.15166222050364564,
+      "adjusted_r_squared": 0.1374140213182854,
+      "residual_rmse": 38.37088237642701
+    },
+    "5-year": {
+      "n": 7291,
+      "regions": 29,
+      "commodities": 8,
+      "r_squared": 0.05573774880755056,
+      "adjusted_r_squared": 0.04908525884888015,
+      "residual_rmse": 42.9001862959846
+    },
+    "10-year": {
+      "n": 15595,
+      "regions": 31,
+      "commodities": 8,
+      "r_squared": 0.029249316316620533,
+      "adjusted_r_squared": 0.025938732297881795,
+      "residual_rmse": 50.67524815292381
+    }
+  },
+  "holm_significant_state_climate_terms": [
+    {
+      "model": "state_2-year",
+      "term": "temperature_anomaly_lag1_z",
+      "coefficient": 4.988501944064856,
+      "p_value_holm": 1.2460509198976416e-06
+    },
+    {
+      "model": "state_5-year",
+      "term": "temperature_anomaly_lag1_z",
+      "coefficient": 4.283778056006714,
+      "p_value_holm": 9.78254790664708e-09
+    }
+  ],
+  "statistical_interpretation": "Results are conditional associations, not causal effects.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

@@ -1,0 +1,7 @@
+rule,rows
+invalid_price,0
+invalid_source_rows,0
+invalid_rainfall,0
+invalid_temperature,0
+invalid_humidity,0
+any_invalid,0

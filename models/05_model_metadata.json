@@ -1,0 +1,26 @@
+{
+  "target": "food_cpi_2015_100",
+  "features": [
+    "cpi_lag_1",
+    "cpi_lag_2",
+    "cpi_lag_3",
+    "cpi_lag_6",
+    "cpi_lag_12",
+    "cpi_rolling_mean_3_lag1",
+    "cpi_rolling_mean_12_lag1",
+    "cpi_rolling_std_12_lag1",
+    "mandi_price_index_2015_100_lag1",
+    "world_wheat_usd_per_mt_lag1",
+    "world_crude_oil_usd_per_bbl_lag1",
+    "state_avg_rainfall_mm_lag1",
+    "state_avg_temperature_c_lag1",
+    "month_sin",
+    "month_cos",
+    "trend_months"
+  ],
+  "training_start": "2001-02-01",
+  "training_end": "2025-12-01",
+  "training_rows": 292,
+  "selected_model": "naive_last",
+  "selection_metric": "rolling-origin RMSE"
+}
