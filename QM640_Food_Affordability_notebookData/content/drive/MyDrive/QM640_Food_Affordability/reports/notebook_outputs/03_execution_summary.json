@@ -1,0 +1,45 @@
+{
+  "notebook": "03_exploratory_analysis",
+  "status": "completed",
+  "state_rows_analyzed": 41792,
+  "national_months_analyzed": 319,
+  "reporting_states_uts": 32,
+  "commodities": 8,
+  "most_volatile_commodity_by_yoy_sd": "Onion",
+  "most_volatile_commodity_yoy_sd": 117.74927892285307,
+  "regional_window_rankings": {
+    "2-year": {
+      "months": 24,
+      "start": "2024-08-01",
+      "end": "2026-07-01",
+      "eligible_regions": 26,
+      "highest_pressure_region": "West Bengal",
+      "highest_median_yoy_pct": 3.1271460859471523
+    },
+    "5-year": {
+      "months": 60,
+      "start": "2021-08-01",
+      "end": "2026-07-01",
+      "eligible_regions": 26,
+      "highest_pressure_region": "West Bengal",
+      "highest_median_yoy_pct": 6.695996876912103
+    },
+    "10-year": {
+      "months": 120,
+      "start": "2016-08-01",
+      "end": "2026-07-01",
+      "eligible_regions": 27,
+      "highest_pressure_region": "West Bengal",
+      "highest_median_yoy_pct": 4.060690785407095
+    }
+  },
+  "exploratory_food_inflation_shock_threshold_pct": 8.02689010932252,
+  "exploratory_high_inflation_months": 75,
+  "latest_cpi_date": "2025-12-01",
+  "latest_food_cpi_2015_100": 158.388052,
+  "rainfall_yoy_price_correlation": -0.0025333647926736222,
+  "temperature_yoy_price_correlation": -0.004010697242086777,
+  "figures_created": 7,
+  "interpretation_warning": "EDA associations are descriptive and must not be interpreted as causal.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

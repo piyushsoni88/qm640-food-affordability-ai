@@ -1,0 +1,12 @@
+scope,horizon,driver,coefficient,p_value,adjusted_p_value,adjustment_method,evidence_at_5pct,interpretation
+national,full available estimation sample,Lagged mandi inflation,-0.025104202595300718,0.8200181204649069,,not applied; prespecified national transmission terms,False,conditional association; not causal
+national,full available estimation sample,Lagged world wheat-price change,-0.034120761611452506,0.6441050270538216,,not applied; prespecified national transmission terms,False,conditional association; not causal
+national,full available estimation sample,Lagged crude-oil price change,0.004971871633206046,0.9492950846753085,,not applied; prespecified national transmission terms,False,conditional association; not causal
+national,full available estimation sample,Lagged national rainfall anomaly,0.04466045784336703,0.5518089873487473,,not applied; prespecified national transmission terms,False,conditional association; not causal
+national,full available estimation sample,Lagged national temperature anomaly,-0.046367978179898066,0.5403949258365,,not applied; prespecified national transmission terms,False,conditional association; not causal
+state fixed effects,2-year,rainfall_anomaly_lag1,-1.4114462914466943,0.1320314876524656,0.2640629753049312,Holm across six state climate horizon tests,False,cluster-robust conditional association; not causal
+state fixed effects,2-year,temperature_anomaly_lag1,4.988501944064856,2.4921018397952835e-07,1.2460509198976416e-06,Holm across six state climate horizon tests,True,cluster-robust conditional association; not causal
+state fixed effects,5-year,rainfall_anomaly_lag1,-0.9339721399535934,0.050263570932015354,0.15079071279604606,Holm across six state climate horizon tests,False,cluster-robust conditional association; not causal
+state fixed effects,5-year,temperature_anomaly_lag1,4.283778056006714,1.6304246511078468e-09,9.78254790664708e-09,Holm across six state climate horizon tests,True,cluster-robust conditional association; not causal
+state fixed effects,10-year,rainfall_anomaly_lag1,1.1918726559665325,0.017500319116630646,0.07000127646652259,Holm across six state climate horizon tests,False,cluster-robust conditional association; not causal
+state fixed effects,10-year,temperature_anomaly_lag1,0.8060217027719904,0.22453568563622084,0.2640629753049312,Holm across six state climate horizon tests,False,cluster-robust conditional association; not causal

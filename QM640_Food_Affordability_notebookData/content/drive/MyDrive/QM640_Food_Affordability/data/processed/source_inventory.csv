@@ -1,0 +1,15 @@
+file,rows,columns,compressed_bytes,compressed_mb
+agmarknet_historical_8_commodities_daily_state_2000_2026.csv.gz,969377,10,12268568,12.268568
+nasa_power_india_all_states_uts_daily_2000_2026_ytd.csv.gz,349272,12,5222965,5.222965
+india_food_affordability_panel_36x8_2000_2026_ytd.csv.gz,91872,39,2111706,2.111706
+india_food_affordability_panel_15x8_2005_2025.csv.gz,30240,30,606724,0.606724
+faostat_india_crop_production.csv.gz,26432,14,205759,0.205759
+nasa_power_india_all_states_uts_monthly_2000_2026_ytd.csv.gz,11484,16,313945,0.313945
+faostat_india_producer_prices.csv.gz,5665,15,39922,0.039922
+agmarknet_official_daily_snapshot_2026-07-28.csv.gz,3824,11,63198,0.063198
+nasa_power_india_15_regions_monthly_2005_2025.csv.gz,3780,9,57266,0.057266
+faostat_india_consumer_price_indices.csv.gz,924,15,8467,0.008467
+world_bank_pink_sheet_food_energy_monthly.csv.gz,792,7,17999,0.017999
+india_commodity_annual_production_prices.csv.gz,512,4,4019,0.004019
+india_food_affordability_national_monthly_2000_2026_ytd.csv.gz,319,23,32272,0.032272
+india_food_affordability_national_monthly.csv.gz,252,23,23491,0.023491

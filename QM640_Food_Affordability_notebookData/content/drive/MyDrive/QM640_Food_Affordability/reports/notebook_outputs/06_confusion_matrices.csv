@@ -1,0 +1,5 @@
+model,true_negative,false_positive,false_negative,true_positive
+persistence,52,3,3,2
+logistic_balanced,48,7,2,3
+random_forest_balanced,51,4,3,2
+hist_gradient_boosting,52,3,2,3

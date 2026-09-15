@@ -1,0 +1,12 @@
+domain,finding,value,scope
+Data,Clean state-month-commodity observations,41792,2001–2026 YTD; unbalanced official reporting panel
+EDA,Most volatile commodity by YoY standard deviation,Onion,Descriptive association
+Statistical analysis,National full-model adjusted R-squared,0.8695043767734014,Conditional association; no significant national transmission terms
+Forecasting,One-step selected model,naive_last,Rolling RMSE 2.063
+Forecasting,Twenty-four-step selected model,damped_ets,All-step RMSE 6.044
+Shock classification,Selected classifier balanced accuracy,0.7727272727272727,60 chronological targets; only five observed shocks
+2026 baseline,Highest conditional shock probability,0.04123813257200249,2026-08-01
+Affordability,Mean forecast food-cost growth,2.5822516766515604,2026 YoY percentage
+Affordability,Highest baseline HFASI,99.80229859964346,Urban; 2026-05-01
+Stress scenario,Highest severe-scenario shock probability,0.7488135892505073,Controlled what-if scenario; not a forecast
+Stress scenario,Highest severe-scenario HFASI,102.54389322668777,Rural representative segment

@@ -1,0 +1,5 @@
+component,selected_method,primary_metric,metric_value,validation,decision_use
+One-step food CPI forecast,naive_last,RMSE,2.06278909753679,60 expanding chronological origins,Near-term monitoring
+24-month food CPI forecast,damped_ets,All-step RMSE,6.044091751191592,24 origins × 24 horizons,Conditional planning path
+Next-month shock classification,hist_gradient_boosting,Balanced accuracy,0.7727272727272727,60 expanding chronological origins,Risk watch; not automatic policy trigger
+Household affordability,HFASI scenario index,Neutral reference,100.0,Formula and sensitivity consistency,Representative rural/urban budget stress

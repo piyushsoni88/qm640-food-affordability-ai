@@ -1,0 +1,23 @@
+{
+  "notebook": "02_data_quality_and_cleaning",
+  "status": "completed",
+  "input_state_rows": 41792,
+  "rows_removed_by_validity_rules": 0,
+  "clean_state_rows": 41792,
+  "retention_rate": 1.0,
+  "extreme_price_rows_flagged": 15,
+  "extreme_price_percent": 0.035892036753445634,
+  "rows_with_exact_1m_price_lag": 40189,
+  "rows_with_exact_12m_price_lag": 37090,
+  "climate_anomaly_rows": 41790,
+  "clean_national_rows": 319,
+  "national_rows_with_cpi": 312,
+  "state_start": "2001-01-01",
+  "state_end": "2026-07-01",
+  "national_start": "2000-01-01",
+  "national_end": "2026-07-01",
+  "missing_prices_interpolated": false,
+  "outlier_raw_values_preserved": true,
+  "calendar_lag_method": "exact keyed date joins",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

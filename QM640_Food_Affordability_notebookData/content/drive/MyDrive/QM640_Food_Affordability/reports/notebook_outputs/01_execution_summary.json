@@ -1,0 +1,21 @@
+{
+  "notebook": "01_data_acquisition",
+  "status": "completed",
+  "curated_files_audited": 14,
+  "curated_analytical_rows": 1494745,
+  "agmarknet_daily_aggregate_rows": 969377,
+  "agmarknet_underlying_official_observations": 18836462,
+  "agmarknet_monthly_state_commodity_rows": 41792,
+  "agmarknet_states_uts": 32,
+  "agmarknet_commodities": 8,
+  "agmarknet_start": "2001-01-01",
+  "agmarknet_end": "2026-07-01",
+  "state_modeling_rows": 41792,
+  "climate_match_rate": 1.0,
+  "national_modeling_rows": 319,
+  "national_start": "2000-01-01",
+  "national_end": "2026-07-01",
+  "partial_2026_warning": true,
+  "climate_spatial_limitation": "Representative administrative-capital points; not area-weighted state averages.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

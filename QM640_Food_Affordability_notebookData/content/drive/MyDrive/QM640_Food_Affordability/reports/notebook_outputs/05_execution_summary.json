@@ -1,0 +1,32 @@
+{
+  "notebook": "05_forecasting_models",
+  "status": "completed",
+  "model_ready_months": 292,
+  "rolling_origins": 60,
+  "evaluation_start": "2020-06-01",
+  "evaluation_end": "2025-12-01",
+  "models_compared": [
+    "naive_last",
+    "seasonal_naive",
+    "ridge_arx",
+    "random_forest",
+    "hist_gradient_boosting"
+  ],
+  "selected_one_step_model": "naive_last",
+  "selected_one_step_rmse": 2.06278909753679,
+  "selected_one_step_mae": 1.529543283333333,
+  "selected_one_step_mape_pct": 1.071202966650184,
+  "selected_one_step_mase": 2.264512688130831,
+  "naive_rmse": 2.06278909753679,
+  "rmse_improvement_vs_naive_pct": 0.0,
+  "complex_model_beats_naive": false,
+  "forecast_horizon_months": 24,
+  "multihorizon_backtest_origins": 24,
+  "selected_long_horizon_model": "damped_ets",
+  "selected_long_horizon_rmse_all_steps": 6.044091751191592,
+  "selected_long_horizon_rmse_h24": 8.391378715839638,
+  "forward_forecast_start": "2026-01-01",
+  "forward_forecast_end": "2027-12-01",
+  "forward_forecast_assumption": "Univariate CPI forecast selected by 24-step backtesting; uncertainty calibrated separately at each historical horizon.",
+  "output_root": "/content/drive/MyDrive/QM640_Food_Affordability"
+}

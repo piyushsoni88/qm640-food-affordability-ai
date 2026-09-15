@@ -1,0 +1,10 @@
+notebook_number,notebook,status
+1,01_data_acquisition,completed
+2,02_data_quality_and_cleaning,completed
+3,03_exploratory_analysis,completed
+4,04_statistical_analysis,completed
+5,05_forecasting_models,completed
+6,06_shock_classification,completed
+7,07_explainability,completed
+8,08_affordability_index,completed
+9,09_scenario_analysis,completed

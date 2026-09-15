@@ -20,7 +20,7 @@ from docx.shared import Inches, Pt, RGBColor
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 TEMPLATE = Path(r"C:\Users\piyus\Downloads\QM 640 Interim Report template-1 (2).docx")
-OUTPUT = ROOT / "reports" / "Piyush_Soni_QM640_Interim_Report_Final.docx"
+OUTPUT = ROOT / "reports" / "Piyush_Soni_QM640_Interim_Report_Aligned_Final.docx"
 ASSETS = WORKSPACE / "tmp" / "interim_report" / "assets"
 SKILL_SCRIPTS = Path(
     r"C:\Users\piyus\.codex\plugins\cache\openai-primary-runtime"
@@ -509,7 +509,7 @@ def build_report() -> Document:
     add_heading(doc, "Purpose of the Study", 2)
     add_body(
         doc,
-        "This quantitative longitudinal study develops and validates a reproducible decision-intelligence framework for essential-food price risk and household affordability stress in India. It connects four tasks: identify conditional drivers, forecast national food CPI, classify next-month high-inflation shocks, and estimate representative rural and urban affordability stress. Chronological validation prevents look-ahead bias; permutation importance and partial dependence support predictive interpretation; and scenario analysis demonstrates how household-budget and procurement signals change under controlled assumptions."
+        "This quantitative longitudinal study develops and validates a reproducible decision-intelligence framework for essential-food price risk and household affordability stress in India. The original four-part design is retained without redefinition: explain future commodity-price changes, compare statistical and machine-learning forecasts, validate HFASI across household segments, and test whether model-driven warnings improve decisions. The national food CPI, aggregate rural/urban HFASI, and scenario outputs reported here are interim operational evidence within that design, not substitutes for the originally proposed commodity-region, household-validity, and decision-loss tests. Chronological validation prevents look-ahead bias, while explainability and uncertainty reporting prevent black-box overstatement."
     )
     add_page_break(doc)
 
@@ -517,16 +517,41 @@ def build_report() -> Document:
     add_heading(doc, "Scope and Objectives", 1)
     add_body(
         doc,
-        "The implemented scope covers eight essential commodities and all available reporting states and union territories in the official market-price panel. The cleaned state-month-commodity panel contains 41,792 observations from January 2001 through July 2026. A national monthly panel contains 319 rows from January 2000 through July 2026, with the food CPI target observed through December 2025. Analyses compare recent two-, five-, and ten-year regional windows; one-step and 24-step forecasts; next-month shock classification; and January-December 2026 affordability and stress scenarios."
+        "The confirmatory scope remains the eight-commodity, commodity-region-month design proposed in the synopsis, with one-, two-, and three-month price and shock horizons and household-segment affordability validation. The implemented interim panel expands coverage to all available reporting states and union territories: 41,792 cleaned state-month-commodity observations from January 2001 through July 2026. A 319-row national monthly panel from January 2000 through July 2026 supplies an additional benchmark, with food CPI observed through December 2025. The interim two-, five-, and ten-year analyses, one-step and 24-step national forecasts, and 2026 scenarios supplement rather than replace the original confirmatory solution."
     )
     add_heading(doc, "Research Question 1 (RQ1)", 2)
-    add_body(doc, "Which lagged-price, market, climatic, seasonal, and macroeconomic variables are conditionally associated with food-price change and high-inflation risk?")
+    add_body(doc, "Which lagged-price, market-arrival, climatic, seasonal, agricultural-production, and macroeconomic variables significantly influence one- to three-month essential-food price changes in India?")
     add_heading(doc, "Research Question 2 (RQ2)", 2)
-    add_body(doc, "Do machine-learning and ensemble models predict national food CPI more accurately than transparent statistical and naive baselines under chronological validation?")
+    add_body(doc, "Do machine-learning and ensemble models predict essential-food prices and price shocks more accurately than conventional statistical forecasting models?")
     add_heading(doc, "Research Question 3 (RQ3)", 2)
-    add_body(doc, "How can forecast food-cost growth be translated into a transparent Household Food Affordability Stress Index (HFASI) for representative rural and urban segments?")
+    add_body(doc, "How can forecasted commodity-price changes be translated into a statistically reliable, interpretable, and stable Household Food Affordability Stress Index across rural, urban, and expenditure segments?")
     add_heading(doc, "Research Question 4 (RQ4)", 2)
-    add_body(doc, "How can combined shock probabilities and affordability stress support household-budget, procurement, inventory, and policy-monitoring decisions under alternative scenarios?")
+    add_body(doc, "How effectively can the proposed early-warning framework support household budgeting, retail inventory, enterprise procurement, and policy-monitoring decisions under alternative supply and price scenarios?")
+    add_heading(doc, "Original Hypotheses and Variables (Retained)", 2)
+    add_heading(doc, "RQ1 Driver Hypothesis", 3)
+    add_body(
+        doc,
+        "Dependent variable: one-, two-, or three-month future essential-food price change. Primary independent variables: lagged commodity price, market arrivals, rainfall anomaly, crop production/yield, fuel or logistics cost, and wage or macroeconomic growth; commodity, region, season, trend, market structure, and data-quality indicators are controls. H0-1: after controls, the joint coefficients of the pre-specified predictors equal zero. H1-1: at least one pre-specified predictor has a nonzero association with future essential-food price change."
+    )
+    add_heading(doc, "RQ2 Forecast-Accuracy Hypothesis", 3)
+    add_body(
+        doc,
+        "Outcome variables: out-of-sample MAE, RMSE, MASE, shock-classification loss, and the paired loss differential. Comparison variables: model family, statistical baseline, forecast horizon, commodity/region, and forecast origin. H0-2: the expected loss of the best machine-learning or ensemble model is equal to or greater than that of the best statistical baseline. H1-2: at least one machine-learning or ensemble model has lower expected loss under chronological validation."
+    )
+    add_heading(doc, "RQ3 HFASI-Validity Hypothesis", 3)
+    add_body(
+        doc,
+        "Outcome variables: HFASI, independently observed real food-cost pressure, criterion-validity correlation, and household-segment rank stability. Component and grouping variables: forecast commodity-price growth, food-expenditure share, nominal wage/income growth, rural/urban status, expenditure fractile, and reference window. H0-3: HFASI has zero or negative association with observed pressure and unstable segment rankings. H1-3: HFASI has a positive association with observed pressure and stable rankings under reasonable weights and normalization choices."
+    )
+    add_heading(doc, "RQ4 Decision-Value Hypothesis", 3)
+    add_body(
+        doc,
+        "Outcome variables: household-budget loss, inventory or procurement loss, alert precision/recall, and paired decision-loss improvement. Decision variables: model alert or shock probability, HFASI level, warning lead time, scenario severity, and strategy type (model-driven, no-warning, or seasonal-naive). H0-4: model-driven alerts do not reduce retrospective decision loss. H1-4: model-driven alerts produce a positive reduction in paired retrospective decision loss."
+    )
+    add_note(
+        doc,
+        "Interim-status rule: available notebook outputs may provide partial evidence for a hypothesis, but they do not redefine its variables, population, horizon, or planned confirmatory test."
+    )
     add_heading(doc, "Measurable Objectives", 2)
     add_bullet(doc, "Create an auditable public-data pipeline with source manifests, data dictionary, quality flags, exact calendar lags, and reproducible Colab notebooks.")
     add_bullet(doc, "Compare persistence, seasonal-naive, regularized regression, tree ensembles, and damped exponential smoothing with expanding chronological validation.")
@@ -593,7 +618,7 @@ def build_report() -> Document:
     add_heading(doc, "Data Sources and Access", 2)
     add_body(
         doc,
-        "The study integrates openly accessible government and multilateral data. The largest source is the AGMARKNET historical market-price layer, stored as a compressed daily-state aggregate representing 18,836,462 underlying official observations. Climate histories come from NASA POWER; international price and energy series come from the World Bank Pink Sheet; standardized agricultural production and price indicators come from FAOSTAT; and HCES supplies published rural and urban food-expenditure shares. Each file is identified in the source manifest with URL, coverage, extraction metadata, and derived-file path."
+        "The study integrates openly accessible government and multilateral data. The largest source is the AGMARKNET historical market-price layer, stored as a compressed daily-state aggregate representing 18,836,462 underlying official observations. The original source plan is retained: AGMARKNET/e-NAM for prices and arrivals, MOSPI for CPI/CFPI and HCES, IMD for official rainfall, agricultural agencies for production and yield, and the Labour Bureau for rural wages. NASA POWER, FAOSTAT, and the World Bank Pink Sheet provide reproducible interim climate, production-price, international commodity, and energy variables where the planned official series are incomplete. Each file is identified in the source manifest with URL, coverage, extraction metadata, and derived-file path."
     )
     add_table_caption(doc, 3, "Principal data sources and analytical roles")
     add_table(
@@ -714,7 +739,7 @@ def build_report() -> Document:
     add_heading(doc, "Choice of Models With Justification", 2)
     add_body(
         doc,
-        "The model set follows the Step 4 design guidance while remaining proportionate to sample size. Ordinary least squares with heteroskedasticity-and-autocorrelation-consistent errors and state fixed-effects models address RQ1. One-step forecasting compares last-value and seasonal-naive baselines with Ridge autoregression with exogenous variables (ARX), Random Forest, and histogram gradient boosting. The 24-month task compares flat naive, seasonal naive, local drift, and damped exponential smoothing (ETS). Next-month shocks are modeled with persistence, balanced logistic regression, balanced Random Forest, and weighted histogram gradient boosting. Unsupervised and neural models were not added because they do not answer the defined targets or outperform the evidence standard merely by being more complex."
+        "The original solution architecture is retained. RQ1 uses cluster-robust driver models for one- to three-month commodity-region price change. RQ2 compares seasonal-naive, exponential smoothing, ARIMA/SARIMA, regularized regression, Random Forest, gradient boosting, and only data-justified neural alternatives under rolling-origin validation. RQ3 constructs and validates HFASI against independently observed real food-cost pressure and segment rankings. RQ4 backtests paired household-budget, inventory, and procurement decision loss against no-warning and seasonal-naive strategies. The completed interim notebooks implement a verified subset: HAC and state fixed-effects models; naive, Ridge ARX, Random Forest, histogram gradient boosting, and damped ETS forecasts; weighted shock classification; a baseline-100 HFASI prototype; and controlled scenarios. These interim methods provide evidence and pipeline validation but do not change the original confirmatory solutions."
     )
     add_page_break(doc)
 
@@ -729,6 +754,9 @@ def build_report() -> Document:
             ["Food CPI lags 1,2,3,6,12", "Engineered exact lags", "Persistence, seasonality, autoregression", "Ridge ARX and ML forecasts"],
             ["Rolling mean/std.", "Engineered from prior CPI", "Local level and volatility", "Forecast models"],
             ["Mandi index / YoY", "Original + engineered", "Wholesale pressure signal", "Regression, forecast, shock"],
+            ["Market arrivals", "Planned original + lags", "Supply entering the market", "Final RQ1/RQ2 confirmation"],
+            ["Production and yield", "Planned annual/crop-season alignment", "Underlying supply capacity", "Final RQ1 confirmation"],
+            ["Wage/income growth", "Planned official lagged series", "Household purchasing power", "Final RQ3 validation"],
             ["World wheat and crude", "Original + YoY change", "Global food and transport context", "Regression, forecast, shock"],
             ["Rainfall/temperature anomaly", "Engineered climate normal deviation", "Weather stress", "State regression and shock"],
             ["Month sine/cosine and trend", "Engineered", "Seasonality and long-run change", "Forecast and shock"],
@@ -749,14 +777,16 @@ def build_report() -> Document:
             ["Recall", "TP/(TP+FN)", "Share of shocks detected", "Classification"],
             ["Balanced accuracy", "(Recall + Specificity)/2", "Balances rare shock and normal classes", "Classification"],
             ["Brier score", "mean((p-o)^2)", "Probability accuracy; lower is better", "Classification"],
-            ["HFASI", "100 + w_food(g_food-g_power)", "Relative affordability stress", "Scenario index"],
+            ["Prototype HFASI", "100 + w_food(g_food-g_power)", "Interim neutral-at-100 stress score", "Scenario prototype"],
+            ["Spearman rho", "rank correlation(HFASI, observed pressure)", "Original criterion-validity test", "Final RQ3"],
+            ["Decision-loss gain", "loss_baseline - loss_model", "Positive values favor model warnings", "Final RQ4"],
         ],
         [1.15, 1.65, 2.25, 1.45],
         font_size=8.2,
     )
     add_body(
         doc,
-        "The selected shock model produced TP=3, TN=52, FP=3, and FN=2. Therefore, precision=3/(3+3)=0.500, recall=3/(3+2)=0.600, specificity=52/(52+3)=0.945, and balanced accuracy=(0.600+0.945)/2=0.773. For the May 2026 rural downside scenario, HFASI=100+0.463(3.494-0)=101.618."
+        "The selected shock model produced TP=3, TN=52, FP=3, and FN=2. Therefore, precision=3/(3+3)=0.500, recall=3/(3+2)=0.600, specificity=52/(52+3)=0.945, and balanced accuracy=(0.600+0.945)/2=0.773. For the May 2026 rural downside scenario, the interim prototype score is 100+0.463(3.494-0)=101.618. This prototype will not be treated as confirmatory HFASI validity evidence until it is normalized and tested against observed household pressure as specified in H0-3/H1-3."
     )
     add_page_break(doc)
 
@@ -779,12 +809,12 @@ def build_report() -> Document:
     add_heading(doc, "RQ1 Preliminary Findings", 2)
     add_body(
         doc,
-        "The national full model has adjusted R-squared=.870 and residual RMSE=1.243, but none of the five pre-specified national transmission terms is significant at 5%. State fixed-effects models identify a positive lagged temperature-anomaly association in the two-year (coefficient 4.99, Holm-adjusted p<.001) and five-year (4.28, Holm-adjusted p<.001) windows, but not the ten-year window. Rainfall terms are not significant after Holm adjustment. RQ1 therefore receives mixed, horizon-dependent associational support, not causal confirmation."
+        "The national full model has adjusted R-squared=.870 and residual RMSE=1.243, but none of the five available interim transmission terms is significant at 5%. State fixed-effects models identify a positive lagged temperature-anomaly association in the two-year (coefficient 4.99, Holm-adjusted p<.001) and five-year (4.28, Holm-adjusted p<.001) windows, but not the ten-year window. Rainfall terms are not significant after Holm adjustment. These are partial tests of H0-1 because the current model does not yet contain the complete pre-specified market-arrival, production/yield, wage, logistics, and one- to three-month commodity-region variable set. H0-1 is therefore not finally adjudicated."
     )
     add_heading(doc, "RQ2 Preliminary Findings", 2)
     add_body(
         doc,
-        "Last-value persistence wins the one-step comparison, whereas damped ETS wins the genuine 24-step backtest. This rejects the assumption that a machine-learning model must be operationally superior. Ridge permutation importance is highest for the 12-month CPI lag (mean RMSE degradation 1.01), followed by the one-month lag and mandi index. The 2026 point path implies average YoY food-cost growth of 2.58%, while empirical intervals widen materially with horizon."
+        "Last-value persistence wins the national one-step comparison, whereas damped ETS wins the national 24-step backtest. The available interim evidence therefore fails to support H1-2 for the national benchmark; machine learning did not outperform the best transparent baseline. Ridge permutation importance is highest for the 12-month CPI lag (mean RMSE degradation 1.01), followed by the one-month lag and mandi index. The shock-classification comparison provides complementary RQ2 evidence: HistGradientBoosting attains balanced accuracy 0.773, precision 0.500, and recall 0.600. The original H0-2/H1-2 decision remains subject to the planned one-, two-, and three-month commodity-region forecast-loss comparisons."
     )
     add_figure_caption(doc, 3, "Twenty-four-month conditional national food CPI forecast")
     add_picture(doc, ASSETS / "nb05_fig3.png", width=6.15)
@@ -796,16 +826,16 @@ def build_report() -> Document:
     add_heading(doc, "RQ3 Preliminary Findings", 2)
     add_body(
         doc,
-        "The shock threshold is the initial-training 75th percentile of next-month YoY food inflation (8.591%). HistGradientBoosting achieves 0.500 precision, 0.600 recall, 0.945 specificity, ROC-AUC 0.764, average precision 0.452, and Brier score 0.0758. Only five shocks occur among 60 evaluation months, so the estimates remain uncertain. The January 2026 probability based entirely on observed inputs is 2.59%; February-December are conditional on the damped ETS CPI path, constant December 2025 external-price levels, and seasonal-normal climate. The maximum baseline probability is 4.12% in August."
+        "The current HFASI prototype operationalizes four original components: forecast food-cost growth, food-expenditure share, purchasing-power growth, and household segment. It uses published food shares of 0.463 rural and 0.391 urban. With 4% purchasing-power growth, the highest baseline prototype score is 99.80; with 0% growth, all 12 months show mild stress, with rural mean 101.20 versus 101.01 urban. Forecast uncertainty crosses the neutral reference in multiple months."
     )
     add_body(
         doc,
-        "HFASI uses published food shares of 0.463 rural and 0.391 urban. With 4% purchasing-power growth, the highest baseline HFASI is 99.80, so point estimates imply relative improvement rather than stress. With 0% purchasing-power growth, all 12 months show mild stress; rural mean HFASI is 101.20 versus 101.01 urban. Forecast uncertainty crosses 100 in multiple months, so the baseline point conclusion is not guaranteed and cannot be interpreted as absolute household prosperity."
+        "This is prototype evidence only. H0-3/H1-3 require independently observed real food-cost pressure, expenditure-fractile groups, survey-weighted household exposure, Spearman criterion validity, and rank-stability sensitivity. Because HCES microdata and wage/income variables are not yet integrated, the report does not claim that H1-3 has been confirmed. The final solution remains the statistically validated, segment-sensitive HFASI specified in the original synopsis."
     )
     add_heading(doc, "RQ4 Preliminary Findings", 2)
     add_body(
         doc,
-        "The decision layer combines maximum monthly HFASI with shock probability. Baseline and favorable-supply scenarios remain normal. Moderate stress produces an HFASI budget watch but no procurement alert. Severe stress produces elevated household stress and a procurement alert: rural HFASI reaches 102.54, maximum shock probability reaches 74.88%, nine months exceed a 10% watch level, and three exceed the 50% classifier cutoff. These thresholds demonstrate a transparent workflow; they are not optimized policy rules."
+        "The interim decision layer combines prototype HFASI with shock probability. The shock threshold is the initial-training 75th percentile of next-month YoY food inflation (8.591%); only five shocks occur among 60 evaluation months. Baseline and favorable-supply scenarios remain normal, moderate stress produces a household-budget watch, and severe stress produces elevated household stress and a procurement alert: rural prototype HFASI reaches 102.54 and maximum shock probability reaches 74.88%. This demonstrates the planned warning architecture but does not test H0-4/H1-4. The original solution requires paired retrospective household-budget, inventory, and procurement loss against no-warning and seasonal-naive strategies."
     )
     add_figure_caption(doc, 4, "Conditional shock probability under alternative 2026 scenarios")
     add_picture(doc, ASSETS / "nb09_fig1.png", width=6.25)
@@ -828,9 +858,11 @@ def build_report() -> Document:
     )
     add_heading(doc, "Next Steps for the Final Report", 1)
     add_bullet(doc, "Obtain authorized HCES 2022-23/2023-24 microdata, apply survey weights, and validate HFASI across expenditure fractiles without publishing restricted raw records.")
-    add_bullet(doc, "Expand rare-shock evaluation as new observed months become available; add calibrated alert thresholds based on asymmetric decision costs.")
-    add_bullet(doc, "Backtest household-budget and procurement losses against no-warning, persistence, and seasonal-naive decision rules.")
-    add_bullet(doc, "Evaluate additional official wage, arrival, production, and policy-event features only when release dates prevent leakage.")
+    add_bullet(doc, "Complete the original one-, two-, and three-month commodity-region forecasts and paired ML-versus-statistical loss comparison for H0-2/H1-2.")
+    add_bullet(doc, "Integrate release-date-safe market arrivals, crop production/yield, wage/income, logistics, and policy-event variables for the complete H0-1/H1-1 joint test.")
+    add_bullet(doc, "Validate HFASI against independently observed real food-cost pressure using Spearman correlation, bootstrap confidence intervals, known-groups comparisons, and rank stability.")
+    add_bullet(doc, "Backtest household-budget, inventory, and procurement losses against no-warning and seasonal-naive decision rules for H0-4/H1-4.")
+    add_bullet(doc, "Expand rare-shock evaluation as new observed months become available and calibrate alert thresholds to asymmetric decision costs.")
     add_bullet(doc, "Complete model cards, environment lock files, automated tests, and monitored drift/coverage checks before deployment.")
     add_heading(doc, "Interim Conclusion", 1)
     add_body(

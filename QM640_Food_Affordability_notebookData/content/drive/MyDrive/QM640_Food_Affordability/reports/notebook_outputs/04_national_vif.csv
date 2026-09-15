@@ -1,0 +1,11 @@
+term,vif
+const,0.9999999999999998
+food_cpi_yoy_lag1_z,1.9097099926579864
+trend_years_z,1.161830935666253
+month_sin_z,1.0034900436342458
+month_cos_z,1.0023257761614643
+mandi_yoy_lag1_z,1.9240943179748964
+world_wheat_yoy_lag1_z,1.3418297952754523
+world_crude_yoy_lag1_z,1.313408232696094
+rainfall_anomaly_lag1_z,1.1583740767735453
+temperature_anomaly_lag1_z,1.1042137539466401
